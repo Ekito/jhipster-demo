@@ -2,11 +2,11 @@ ynov-app-mongodb:
   container_name: ynov-app-mongodb
   image: mongo:3.0.7
   ports:
-    - "27018:27017"
+    - "127.0.0.1:27018:27017"
 ynov-app:
   container_name: ynov-app
   image: yo/ynov:latest
   ports:
-    - "8084:8080"
+    - "127.0.0.1:8084:8080"
   links:
     - "ynov-app-mongodb:mongodb"
