@@ -2,7 +2,7 @@ ynov-app-mongodb:
   container_name: ynov-app-mongodb
   image: mongo:3.0.7
   ports:
-    - "27017:27017"
+    - "27018:27017"
 ynov-app:
   container_name: ynov-app
   image: yo/ynov:latest
