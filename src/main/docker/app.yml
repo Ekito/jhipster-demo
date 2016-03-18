@@ -7,6 +7,6 @@ ynov-app:
   container_name: ynov-app
   image: yo/ynov:latest
   ports:
-    - "8080:8080"
+    - "8084:8080"
   links:
     - "ynov-app-mongodb:mongodb"
