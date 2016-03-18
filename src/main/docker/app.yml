@@ -1,6 +1,9 @@
 ynov-app-mongodb:
   container_name: ynov-app-mongodb
   image: mongo:3.0.7
+  environment:
+   - VIRTUAL_PORT=9000
+   - VIRTUAL_HOST=jhipster.ekito.fr
   ports:
     - "127.0.0.1:27018:27017"
 ynov-app:
